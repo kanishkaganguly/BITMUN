@@ -284,6 +284,9 @@
                     </fieldset>              
                 </font>
             </div>
+            <input type="hidden" name="draftResponse" value="[,,&quot;-6228525424519436612&quot;]">
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="fbzx" value="-6228525424519436612">
             <div class="modal-footer">
               <button type="button" id="close_modal" class="btn btn-default" data-dismiss="modal">Close</button>
               <button type="submit" id="submit_form" class="btn btn-primary">Register Now</button>
@@ -318,6 +321,7 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             url: "https://docs.google.com/forms/d/1bf5Tw9MhJGGL3O6cAz6i3Lax97HkbDVP6v_pN5cl2ks/formResponse",
+            dataType: "xml",
             data: data,
             success: success(),
         });
