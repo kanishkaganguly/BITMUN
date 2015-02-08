@@ -149,9 +149,9 @@
               <div class="modal-body">
                 <font color="black">
                     <form class="form-horizontal" method="post" id="reg_form">
-                       <h5>Registrant Details</h5>
-                       <br>
-                       <fieldset>
+                     <h5>Registrant Details</h5>
+                     <br>
+                     <fieldset>
                         <!-- First Name input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="fname">First Name</label>  
@@ -235,7 +235,7 @@
 
                         <hr><h5>Country and Committee Preferences</h5><br>
 
-                         <!-- Committee Preference input-->
+                        <!-- Committee Preference input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="comm-pref">Committee Preference</label>  
                             <div class="col-md-4">
@@ -246,7 +246,7 @@
                             </div>
                         </div>
 
-                         <!-- Country 1 input-->
+                        <!-- Country 1 input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="c1">Country Preference 1</label>  
                             <div class="col-md-5">
@@ -255,7 +255,7 @@
                             </div>
                         </div>
 
-                            <!-- Country 2 input-->
+                        <!-- Country 2 input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="c2">Country Preference 2</label>  
                             <div class="col-md-5">
@@ -264,7 +264,7 @@
                             </div>
                         </div>
 
-                            <!-- Country 3 input-->
+                        <!-- Country 3 input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="c3">Country Preference 3</label>  
                             <div class="col-md-5">
@@ -273,7 +273,7 @@
                             </div>
                         </div>
 
-                            <!-- Country 4 input-->
+                        <!-- Country 4 input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="c4">Country Preference 4</label>  
                             <div class="col-md-5">
@@ -281,17 +281,16 @@
 
                             </div>
                         </div>
-                        </fieldset>              
-                    </font>
-                </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" id="close_modal" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="submit" id="submit_form" class="btn btn-primary">Register Now</button>
-              </div>
-          </form>
-      </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
+                    </fieldset>              
+                </font>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="close_modal" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" id="submit_form" class="btn btn-primary">Register Now</button>
+          </div>
+      </form>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
 
@@ -318,10 +317,10 @@ $(document).ready(function(){
         console.log(data);
         $.ajax({
             type: "POST",
-                    url: "https://docs.google.com/forms/d/1bf5Tw9MhJGGL3O6cAz6i3Lax97HkbDVP6v_pN5cl2ks/formResponse",
-                    data: data,
-                    success: success(),
-                });
+            url: "https://docs.google.com/forms/d/1bf5Tw9MhJGGL3O6cAz6i3Lax97HkbDVP6v_pN5cl2ks/formResponse",
+            data: data,
+            success: success(),
+        });
     });
 });
 
