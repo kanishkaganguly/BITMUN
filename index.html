@@ -91,9 +91,9 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>About BITMUN 2015</h2>
                     <p>For the first time, BITOTSAV '15 is proud to host the BITMUN 2015. With participants from colleges all across India, BITMUN 2015 hopes to set standards for MUNs all across India.</p>
-                    <p>The committees to be featured in this debut MUN include the <span class="light">SOCUM</span> and the ECOFIN.</p>
+                    <p>The committees to be featured in this debut MUN include the <span class="light">SOCHUM</span> and the ECOFIN.</p>
                     <p>Further information regarding the agenda and the guidelines can be found below in the <a class="page-scroll" href="#download">Downloads</a> section.</p>
-                    <br><p><a href="#registerModal" data-target="#registerModal" data-toggle="modal" class="btn btn-default btn-lg">Registrations Open Soon</a></p>
+                    <br><p><a href="#registerModal" data-target="#registerModal" data-toggle="modal" class="btn btn-default btn-lg">Register Now</a></p>
                 </div>
             </div>
         </section>
@@ -139,7 +139,7 @@
         </footer>
 
         <!-- Modal Registration Box -->
-        <div class="modalBLOCK fade" id="registerModalBLOCK" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -156,7 +156,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="fname">First Name</label>  
                             <div class="col-md-5">
-                                <input id="fname" name="entry.386258042" type="text" placeholder="Enter First Name" class="form-control input-md" required>
+                                <input id="fname" name="fname" type="text" placeholder="Enter First Name" class="form-control input-md" required>
                             </div>
                         </div>
 
@@ -164,7 +164,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="lname">Last Name</label>  
                             <div class="col-md-5">
-                                <input id="lname" name="entry.580387294" type="text" placeholder="Enter Last Name" class="form-control input-md">
+                                <input id="lname" name="lname" type="text" placeholder="Enter Last Name" class="form-control input-md">
                             </div>
                         </div>
 
@@ -172,7 +172,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="college">College/University</label>  
                             <div class="col-md-5">
-                                <input id="college" name="entry.697859951" type="text" placeholder="Enter College Name" class="form-control input-md" required="">
+                                <input id="college" name="college" type="text" placeholder="Enter College Name" class="form-control input-md" required="">
 
                             </div>
                         </div>
@@ -181,7 +181,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="email">Email ID</label>  
                             <div class="col-md-5">
-                                <input id="email" name="entry.1466622020" type="email" placeholder="Enter Email ID" class="form-control input-md" required="">
+                                <input id="email" name="email" type="email" placeholder="Enter Email ID" class="form-control input-md" required="">
 
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="contact">Contact Number</label>  
                             <div class="col-md-5">
-                                <input id="contact" name="entry.2146337983" type="number" placeholder="Enter Phone Number" class="form-control input-md" required>
+                                <input id="contact" name="contact" type="number" placeholder="Enter Phone Number" class="form-control input-md" required>
                             </div>
                         </div>
 
@@ -198,7 +198,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-5">
-                                <input id="dob" name="entry.1228166476" type="date" placeholder="MM/DD/YYYY" class="form-control input-md" required>
+                                <input id="dob" name="dob" type="date" placeholder="MM/DD/YYYY" class="form-control input-md" required>
                             </div>
                         </div>
 
@@ -207,10 +207,10 @@
                             <label class="col-md-5 control-label" for="gender">Gender</label>
                             <div class="col-md-5"> 
                                 <label class="radio-inline" for="male-choice">
-                                    <input type="radio" name="entry.408145801" id="male-choice" value="Male">Male
+                                    <input type="radio" name="gender" id="male-choice" value="Male">Male
                                 </label> 
                                 <label class="radio-inline" for="female-choice">
-                                    <input type="radio" name="entry.408145801" id="female-choice" value="Female">Female
+                                    <input type="radio" name="gender" id="female-choice" value="Female">Female
                                 </label> 
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="delegate-past">Conferences Attended as Delegate</label>  
                             <div class="col-md-4">
-                                <input id="delegate-past" name="entry.2118319825" type="number" placeholder="Enter a Value" class="form-control input-md" required>
+                                <input id="delegate-past" name="condel" type="number" placeholder="Enter a Value" class="form-control input-md" required>
                             </div>
                         </div>
 
@@ -229,7 +229,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="exec-past">Conferences Attended as Executive Board Member</label>  
                             <div class="col-md-4">
-                                <input id="exec-past" name="entry.1450765664" type="number" placeholder="Enter a Value" class="form-control input-md" required>
+                                <input id="exec-past" name="conex" type="number" placeholder="Enter a Value" class="form-control input-md" required>
                             </div>
                         </div>
 
@@ -239,7 +239,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="comm-pref">Committee Preference</label>  
                             <div class="col-md-4">
-                                <select id="comm-pref" name="entry.818152879" class="form-control" required>
+                                <select id="comm-pref" name="committee" class="form-control" required>
                                     <option value="ECOFIN">ECOFIN (Economic and Financial Committee)</option>
                                     <option value="SOCHUM">SOCHUM (Social, Humanitarian and Cultural Affairs Committee)</option>
                                 </select>
@@ -250,7 +250,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="c1">Country Preference 1</label>  
                             <div class="col-md-5">
-                                <input id="c1" name="entry.1014331417" type="text" placeholder="Enter Country 1" class="form-control input-md" required>
+                                <input id="c1" name="country1" type="text" placeholder="Enter Country 1" class="form-control input-md" required>
 
                             </div>
                         </div>
@@ -259,7 +259,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="c2">Country Preference 2</label>  
                             <div class="col-md-5">
-                                <input id="c2" name="entry.774794735" type="text" placeholder="Enter Country 2" class="form-control input-md">
+                                <input id="c2" name="country2" type="text" placeholder="Enter Country 2" class="form-control input-md">
 
                             </div>
                         </div>
@@ -268,7 +268,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="c3">Country Preference 3</label>  
                             <div class="col-md-5">
-                                <input id="c3" name="entry.2052313740" type="text" placeholder="Enter Country 3" class="form-control input-md">
+                                <input id="c3" name="country3" type="text" placeholder="Enter Country 3" class="form-control input-md">
 
                             </div>
                         </div>
@@ -277,16 +277,13 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="c4">Country Preference 4</label>  
                             <div class="col-md-5">
-                                <input id="c4" name="entry.1301974769" type="text" placeholder="Enter Country 4" class="form-control input-md">
+                                <input id="c4" name="country4" type="text" placeholder="Enter Country 4" class="form-control input-md">
 
                             </div>
                         </div>
                     </fieldset>              
                 </font>
             </div>
-            <input type="hidden" name="draftResponse" value="[,,&quot;-6228525424519436612&quot;]">
-            <input type="hidden" name="pageHistory" value="0">
-            <input type="hidden" name="fbzx" value="-6228525424519436612">
             <div class="modal-footer">
               <button type="button" id="close_modal" class="btn btn-default" data-dismiss="modal">Close</button>
               <button type="submit" id="submit_form" class="btn btn-primary">Register Now</button>
@@ -311,7 +308,8 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/grayscale.js"></script>
-<!--
+
+<!-- Modal Submitter -->
 <script>
 $(document).ready(function(){
     $("#reg_form").on("submit", function(event){
@@ -320,8 +318,7 @@ $(document).ready(function(){
         console.log(data);
         $.ajax({
             type: "POST",
-            url: "https://docs.google.com/forms/d/1bf5Tw9MhJGGL3O6cAz6i3Lax97HkbDVP6v_pN5cl2ks/formResponse",
-            dataType: "xml",
+            url: "db.php",
             data: data,
             success: success(),
         });
@@ -334,7 +331,7 @@ function success(){
     $('#close_modal').click();
 }
 </script>
--->
+
 </body>
 
 </html>
